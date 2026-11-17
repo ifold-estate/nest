@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Nest Thermostat Integration</title>
+<meta name="description" content="Privacy policy for the Ifold Estate's private Nest thermostat integration with Home Assistant.">
+<style>
+  :root { --bg:#fbfaf7; --text:#1f1e1c; --muted:#5f5d58; --rule:#e2dfd8; --link:#1f5fae; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#161615; --text:#ecebe7; --muted:#a8a59e; --rule:#33322f; --link:#7fb0ef; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width:42rem; margin:0 auto; padding:3rem 1rem 4rem; }
+  h1 { font-size:1.75rem; line-height:1.25; margin:0 0 .5rem; }
+  h2 { font-size:1.15rem; margin:2rem 0 .5rem; }
+  p, li { margin:.5rem 0; }
+  .lead { color:var(--muted); margin-bottom:2rem; }
+  a { color:var(--link); }
+  footer { margin-top:3rem; padding-top:1rem; border-top:1px solid var(--rule); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="lead">Nest Thermostat Integration · Last updated 17 November 2026</p>
+
+  <p>This policy covers the Nest Thermostat Integration, a private app that connects the Google Nest thermostats at the Ifold Estate to the household's own Home Assistant server. The app is used only by the owner of the Ifold Estate and is not offered to anyone else.</p>
+
+  <h2>Data the app accesses</h2>
+  <p>With the owner's permission, given through Google's sign-in screen, the app uses Google's Smart Device Management API to access the owner's own Nest thermostats. This includes:</p>
+  <ul>
+    <li>device names and basic device information</li>
+    <li>current temperature and humidity</li>
+    <li>heating mode, eco mode and temperature set-points</li>
+    <li>whether the thermostat is currently heating</li>
+  </ul>
+  <p>The app does not access email, contacts, files, location history or any other Google account data.</p>
+
+  <h2>How the data is used</h2>
+  <p>The data is used only to show the thermostats' status and to control the heating from the owner's Home Assistant dashboard. It is not used for advertising, profiling, analytics or any other purpose.</p>
+
+  <h2>Where the data is stored</h2>
+  <p>Thermostat readings and the sign-in tokens Google issues are stored only on the owner's self-hosted Home Assistant server at the property. Status updates are delivered from Google through a Google Cloud Pub/Sub topic in the owner's own Google Cloud project. Readings are kept in Home Assistant's history for as long as its history settings allow, and are deleted when they expire or the integration is removed.</p>
+
+  <h2>Sharing</h2>
+  <p>The data is not sold, rented or shared with any third party, and is not transferred anywhere other than the owner's own Home Assistant server.</p>
+  <p>The app's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Removing access</h2>
+  <p>Access can be withdrawn at any time by removing the app under <a href="https://myaccount.google.com/connections">Google Account → Third-party apps &amp; services</a>, or by removing the Google Nest integration from Home Assistant. Stored readings are then deleted from Home Assistant in line with its history settings.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be published on this page with a new "last updated" date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:ifold.estate@gmail.com">ifold.estate@gmail.com</a></p>
+
+  <footer>
+    <a href="./">Nest Thermostat Integration</a> · Ifold Estate
+  </footer>
+</main>
+</body>
+</html>

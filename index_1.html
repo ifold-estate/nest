@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nest Thermostat Integration – Ifold Estate</title>
+<meta name="description" content="A private Home Assistant integration that connects the Ifold Estate's own Google Nest thermostats to its self-hosted home automation system.">
+<style>
+  :root { --bg:#fbfaf7; --text:#1f1e1c; --muted:#5f5d58; --rule:#e2dfd8; --link:#1f5fae; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#161615; --text:#ecebe7; --muted:#a8a59e; --rule:#33322f; --link:#7fb0ef; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width:42rem; margin:0 auto; padding:3rem 1rem 4rem; }
+  h1 { font-size:1.75rem; line-height:1.25; margin:0 0 .5rem; }
+  h2 { font-size:1.15rem; margin:2rem 0 .5rem; }
+  p, li { margin:.5rem 0; }
+  .lead { color:var(--muted); margin-bottom:2rem; }
+  a { color:var(--link); }
+  footer { margin-top:3rem; padding-top:1rem; border-top:1px solid var(--rule); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Nest Thermostat Integration</h1>
+  <p class="lead">A private home automation app for the Ifold Estate.</p>
+
+  <p>This app connects the Google Nest thermostats installed at the Ifold Estate to the household's own, self-hosted <a href="https://www.home-assistant.io/">Home Assistant</a> server. It uses Google's Smart Device Management API so the owner can see room temperatures and heating status, and adjust heating set-points, alongside the rest of the home's heating controls.</p>
+
+  <h2>Who it is for</h2>
+  <p>The app is used only by the owner of the Ifold Estate, for the thermostats in their own home. It is not offered to the public, and nobody else can sign in to it.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Reads each thermostat's current temperature, humidity, mode, set-point and heating status.</li>
+    <li>Changes heating mode and set-points when the owner asks it to.</li>
+    <li>Shows this information on the owner's private Home Assistant dashboard.</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>Data from the thermostats stays on the owner's own Home Assistant server and is never sold or shared. Read the full <a href="privacy.html">privacy policy</a>.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this app: <a href="mailto:ifold.estate@gmail.com">ifold.estate@gmail.com</a></p>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a> · Ifold Estate
+  </footer>
+</main>
+</body>
+</html>
